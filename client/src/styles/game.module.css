@@ -1,0 +1,61 @@
+/* Container styling */
+/* Center content properly */
+.gameContainer {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 110vh;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  color: #333;
+  padding-top: 150px; /* Adjust according to navbar height */
+  box-sizing: border-box;
+}
+
+/* Title */
+.gameTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Game Over Screen */
+.gameOver {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.gameOver h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.gameOver p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e65c00;
+}

@@ -1,0 +1,83 @@
+/* Wrap styles inside a class */
+.signupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    color: #333;
+  }
+  .signupCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    background-color: white;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #333;
+  }
+  .signupContainer h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .signupContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .signupContainer input {
+    padding: 10px;
+    border: .2px solid #eee;
+    background: #fff;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .signupContainer input:focus {
+    outline: none;
+    border-color: #0070f3;
+  }
+  
+  .signupContainer .btn {
+    background-color: #0070f3;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .signupContainer .btn:hover {
+    background-color: #005bb5;
+  }
+  
+  .signupContainer p {
+    margin-top: 10px;
+  }
+  
+  .signupContainer p a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signupContainer p a:hover {
+    text-decoration: underline;
+  }
+  

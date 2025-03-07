@@ -1,0 +1,53 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusts based on screen size */
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 80vw; /* Prevents it from taking up the full width */
+}
+
+.tile {
+  width: 90px;  /* Slightly reduced to fit properly */
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #add8e6;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.tile:hover {
+  transform: scale(1.1);
+}
+
+.flipped {
+  background-color: #fff;
+}
+
+.tileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .tile {
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+  }
+}
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }

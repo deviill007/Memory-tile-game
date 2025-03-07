@@ -1,0 +1,75 @@
+/* Centering Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+/* Game Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 380px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the card */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Title */
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Play Button */
+.playButton {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effect for Play Button */
+.playButton:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    height: 350px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .playButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
